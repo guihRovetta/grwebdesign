@@ -25,13 +25,17 @@ body {
 }
 
 a {
-    color: #00ccff;
+    color: #36D7B7;
     text-decoration: none;
-    font-size: 1.6em;
+    font-size: 1.0em;
 }
 
 a:hover {
     text-decoration: underline;
+}
+
+a:visited{
+    color: #22A7F0;
 }
 
 /* ==|== Estilos Principais ================================================== */
@@ -93,6 +97,8 @@ embed {
 
 .menu li a {
     color: #999;
+    font-size: 1.8em;
+    
 }
 
 .banner {
@@ -138,6 +144,26 @@ h1  {
    opacity: 0.7;    
 }
 
+.fade{
+    opacity: 0.7;
+    filter: grayscale(1);
+	-webkit-filter: grayscale(1);
+	-moz-filter: grayscale(1);
+	-o-filter: grayscale(1);
+	-ms-filter: grayscale(1);
+    transition: 1s -webkit-filter linear;
+}
+
+.fade:hover{
+    opacity: 1.0;
+    filter: grayscale(0);
+	-webkit-filter: grayscale(0);
+	-moz-filter: grayscale(0);
+	-o-filter: grayscale(0);
+	-ms-filter: grayscale(0);
+    transition: 1s -webkit-filter linear;
+}
+
 #circle {
 	width: 200px;
 	height: 200px;
@@ -145,6 +171,30 @@ h1  {
 	-moz-border-radius: 100px;
 	-webkit-border-radius: 100px;
 	border-radius: 100px;
+    padding: 1.2em;
+   
+}
+
+.content h3{
+    font-size: 1.8em;
+}
+
+.social a img{
+    padding: 1.2em;
+}
+
+.projects{
+    background-color: #663399; 
+    height: 780px;
+    margin-top: 3.6em;
+    margin-bottom: 4.8em;
+    position: relative;  
+    color: #FFF;
+}
+
+.projects a h2{
+    color: #FFF;
+    padding: 1.2em;
 }
 
 .coluna {
@@ -161,6 +211,7 @@ h2 {
     font-size: 2.4em;
     font-weight: 200;
     text-transform: uppercase;
+    color: #444;
 }
 
 p {
